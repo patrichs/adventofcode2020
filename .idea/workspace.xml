@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8352aee-7118-44d0-924b-5f94f9545f6c" name="Default Changelist" comment="" />
+    <list default="true" id="a8352aee-7118-44d0-924b-5f94f9545f6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,14 +19,20 @@
     </option>
   </component>
   <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1l7hUhq1prd28aQObkGsZnLx3mK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
@@ -52,6 +62,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040/-1920.-14.1920.1160@0.0.1920.1040" timestamp="1606985173619" />
+    <state x="435" y="391" key="Github.ShareDialog" timestamp="1606985528392">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="435" y="391" key="Github.ShareDialog/0.0.1920.1040/1920.0.1920.1040/-1920.-14.1920.1160@0.0.1920.1040" timestamp="1606985528392" />
+    <state x="788" y="225" key="Github.UntrackedFilesDialog" timestamp="1606985534206">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="788" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1040/-1920.-14.1920.1160@0.0.1920.1040" timestamp="1606985534206" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1606961299308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

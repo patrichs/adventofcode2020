@@ -1,8 +1,40 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"log"
+	"os"
 )
+
+func main() {
+	f, err := os.Open("files\\day2")
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	defer f.Close()
+
+	scanner := bufio.NewScanner(f)
+
+	var a []string
+
+	for scanner.Scan() {
+		a = append(a, scanner.Text())
+	}
+
+	if err := scanner.Err(); err != nil {
+		log.Fatal(err)
+	}
+
+	x := len(a[1])
+
+	for i := 0; i < x; i++ {
+		s := a[i]
+
+	}
+}
 
 func printSlice(s []string) {
 	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
@@ -124,7 +156,6 @@ func printSlice(s []string) {
 //		}
 //	}
 //}
-
 
 //func main() {
 //	content, err := ioutil.ReadFile("files\\day1")
