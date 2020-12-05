@@ -5,10 +5,11 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strings"
 )
 
 func main() {
-	f, err := os.Open("files\\day2")
+	f, err := os.Open("files\\day3")
 
 	if err != nil {
 		log.Fatal(err)
@@ -28,12 +29,76 @@ func main() {
 		log.Fatal(err)
 	}
 
-	x := len(a[1])
+	var product []int
 
-	for i := 0; i < x; i++ {
-		s := a[i]
+	product = append(product, loopThrough(1, len(a), a, 1), loopThrough(3, len(a), a, 1),
+		loopThrough(5, len(a), a, 1), loopThrough(7, len(a), a, 1), loopThrough(1, len(a), a, 2))
 
+	var total = 1
+	for _, v := range product {
+		fmt.Println("Total trees: ", v)
+		total *= v
 	}
+
+	fmt.Println("Total product of all trees: ", total)
+
+	//amount := 0
+	//xLen := len(a[0])
+	//y := len(a)
+	//xIndex := 0
+	//
+	//for i := 1; i < y; i++ {
+	//	s := strings.Split(a[i], "")
+	//	xIndex += 3
+	//
+	//	if xIndex >= xLen {
+	//		if xIndex % 3 != 0 {
+	//			xIndex = xIndex % 3 - 1
+	//		} else {
+	//			xIndex = 2
+	//		}
+	//	}
+	//
+	//	if s[xIndex] == "#" {
+	//		amount++
+	//		s[xIndex] = "X"
+	//	} else {
+	//		s[xIndex] = "-"
+	//	}
+	//
+	//	fmt.Println("Splitting string", s, "trees found: ", amount, "iterations:", i, "currentX:", xIndex)
+	//}
+}
+
+func loopThrough(x int, y int, a []string, iterate int) int {
+	amount := 0
+	xLen := len(a[0])
+	xIndex := 0
+
+	for i := 1; i < y; i += iterate {
+		s := strings.Split(a[i], "")
+		xIndex += x
+
+		if xIndex >= xLen {
+			if xIndex%x != 0 {
+				xIndex = xIndex%x - 1
+			} else {
+				xIndex = x - 1
+			}
+		}
+
+		if s[xIndex] == "#" {
+			amount++
+			s[xIndex] = "X"
+		} else {
+			s[xIndex] = "-"
+		}
+
+		fmt.Println("Splitting string", s, "trees found: ", amount, "iterations:", i, "currentX:", xIndex)
+	}
+	fmt.Println("trees found:", amount)
+
+	return amount
 }
 
 func printSlice(s []string) {
