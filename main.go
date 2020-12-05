@@ -51,16 +51,16 @@ func main() {
 		if valid {
 			count++
 
-			splitted := strings.Split(v, " ")
+			split := strings.Split(v, " ")
 
 			newPassport := passport.Passport{
-				Byr: getWhereName(splitted, "byr"),
-				Iyr: getWhereName(splitted, "iyr"),
-				Eyr: getWhereName(splitted, "eyr"),
-				Hgt: getWhereName(splitted, "hgt"),
-				Hcl: getWhereName(splitted, "hcl"),
-				Ecl: getWhereName(splitted, "ecl"),
-				Pid: getWhereName(splitted, "pid"),
+				Byr: getWhereName(split, "byr"),
+				Iyr: getWhereName(split, "iyr"),
+				Eyr: getWhereName(split, "eyr"),
+				Hgt: getWhereName(split, "hgt"),
+				Hcl: getWhereName(split, "hcl"),
+				Ecl: getWhereName(split, "ecl"),
+				Pid: getWhereName(split, "pid"),
 			}
 			validPassports = append(validPassports, newPassport)
 		}
@@ -77,8 +77,8 @@ func main() {
 	fmt.Println("Second part validated passports amount:", validCount)
 }
 
-func getWhereName(splittedPassport []string, which string) string {
-	for _, v := range splittedPassport {
+func getWhereName(p []string, which string) string {
+	for _, v := range p {
 		if which == getLeftside(v) {
 			return getRightside(v)
 		}
