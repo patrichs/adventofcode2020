@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8352aee-7118-44d0-924b-5f94f9545f6c" name="Default Changelist" comment="day 4 finished + quick clean up :)">
-      <change afterPath="$PROJECT_DIR$/day4.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/day5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a8352aee-7118-44d0-924b-5f94f9545f6c" name="Default Changelist" comment="day 5 part 1 finished">
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +76,7 @@
     <MESSAGE value="day 3 finished" />
     <MESSAGE value="day 4 finished" />
     <MESSAGE value="day 4 finished + quick clean up :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 4 finished + quick clean up :)" />
+    <MESSAGE value="day 5 part 1 finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 5 part 1 finished" />
   </component>
 </project>
