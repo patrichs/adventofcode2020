@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8352aee-7118-44d0-924b-5f94f9545f6c" name="Default Changelist" comment="day3 start">
+    <list default="true" id="a8352aee-7118-44d0-924b-5f94f9545f6c" name="Default Changelist" comment="day3 almost done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
@@ -56,8 +56,20 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="day3 start" />
-    <option name="LAST_COMMIT_MESSAGE" value="day3 start" />
+    <MESSAGE value="day3 almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="day3 almost done" />
   </component>
 </project>

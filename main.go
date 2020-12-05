@@ -31,8 +31,8 @@ func main() {
 
 	var product []int
 
-	product = append(product, loopThrough(1, len(a), a, 1), loopThrough(3, len(a), a, 1),
-		loopThrough(5, len(a), a, 1), loopThrough(7, len(a), a, 1), loopThrough(1, len(a), a, 2))
+	product = append(product, loopThrough(1, len(a), a, 1, 1), loopThrough(3, len(a), a, 1, 1),
+		loopThrough(5, len(a), a, 1, 1), loopThrough(7, len(a), a, 1, 1), loopThrough(1, len(a), a, 2, 2))
 
 	var total = 1
 	for _, v := range product {
@@ -41,47 +41,24 @@ func main() {
 	}
 
 	fmt.Println("Total product of all trees: ", total)
-
-	//amount := 0
-	//xLen := len(a[0])
-	//y := len(a)
-	//xIndex := 0
-	//
-	//for i := 1; i < y; i++ {
-	//	s := strings.Split(a[i], "")
-	//	xIndex += 3
-	//
-	//	if xIndex >= xLen {
-	//		if xIndex % 3 != 0 {
-	//			xIndex = xIndex % 3 - 1
-	//		} else {
-	//			xIndex = 2
-	//		}
-	//	}
-	//
-	//	if s[xIndex] == "#" {
-	//		amount++
-	//		s[xIndex] = "X"
-	//	} else {
-	//		s[xIndex] = "-"
-	//	}
-	//
-	//	fmt.Println("Splitting string", s, "trees found: ", amount, "iterations:", i, "currentX:", xIndex)
-	//}
 }
 
-func loopThrough(x int, y int, a []string, iterate int) int {
+func loopThrough(x int, y int, a []string, iterate int, starti int) int {
 	amount := 0
 	xLen := len(a[0])
 	xIndex := 0
 
-	for i := 1; i < y; i += iterate {
+	for i := starti; i < y; i += iterate {
 		s := strings.Split(a[i], "")
 		xIndex += x
 
 		if xIndex >= xLen {
-			if xIndex%x != 0 {
-				xIndex = xIndex%x - 1
+			if (xIndex)%x != 0 {
+				distance := xIndex - 30
+				xIndex = distance - 1
+			} else if xIndex-x != 30 {
+				distance := xIndex - 30
+				xIndex = distance - 1
 			} else {
 				xIndex = x - 1
 			}
